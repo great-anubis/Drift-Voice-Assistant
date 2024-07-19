@@ -1,6 +1,9 @@
 from transformers import pipeline
 
-nlp_pipeline = pipeline('sentiment-analysis')
+# Initialize NLP pipeline
+nlp_pipeline = pipeline("text-generation", model="gpt2")
 
-def analyze_text(text):
-    return nlp_pipeline(text)
+def generate_response(input_text):
+    conversation = nlp_pipeline(input_text, max_length=50)
+    response = conversation[0]['generated_text']
+    return response
