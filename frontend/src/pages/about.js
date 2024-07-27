@@ -1,12 +1,13 @@
 import React from 'react';
+import Navbar from '../components/navbar';
 
-const About = () => {
-  return (
-    <div className="about-container">
-      <h1>About Drift AI Assistant</h1>
-      <p>This project aims to create a personal AI assistant inspired by Jarvis from Iron Man.</p>
-    </div>
-  );
-};
+function About() {
+    return (
+        <div>
+            <Navbar />
+            <h1>About</h1>
+        </div>
+    );
+}
 
 export default About;

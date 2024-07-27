@@ -1,9 +1,7 @@
 from flask import Flask
+from flask_cors import CORS
 
-def create_app():
-    app = Flask(__name__)
+app = Flask(__name__)
+CORS(app)
 
-    from .routes import process_text
-    app.add_url_rule('/process', 'process_text', process_text, methods=['POST'])
-
-    return app
+from app import routes
