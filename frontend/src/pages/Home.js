@@ -1,16 +1,14 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import Chat from '../components/Chat';
-import Footer from '../components/Footer';
+import Navbar from '../components/navbar';
+import Chat from '../components/Chat'
 
-const Home = () => {
-  return (
-    <div>
-      <Navbar />
-      <Chat />
-      <Footer />
-    </div>
-  );
-};
+function Home() {
+    return (
+        <div>
+            <Navbar />
+            <Chat />
+        </div>
+    );
+}
 
 export default Home;
