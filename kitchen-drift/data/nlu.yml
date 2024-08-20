@@ -1,0 +1,50 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hello
+    - Hi
+    - Hey
+    - Good morning
+    - Good evening
+
+- intent: goodbye
+  examples: |
+    - Goodbye
+    - Bye
+    - See you later
+    - Talk to you soon
+    - Take care
+
+- intent: ask_recipe
+  examples: |
+    - How do I make a chocolate cake?
+    - Can you give me a recipe for lasagna?
+    - I need a recipe for spaghetti bolognese
+    - What are the ingredients for pancakes?
+
+- intent: set_timer
+  examples: |
+    - Set a timer for 10 minutes
+    - Start a 5-minute timer
+    - Can you remind me in 20 minutes?
+
+- intent: convert_units
+  examples: |
+    - Convert 200 grams to ounces
+    - How many cups are in 500 milliliters?
+    - What is 3 teaspoons in tablespoons?
+    - Convert 2 liters to milliliters
+
+- intent: ask_substitute
+  examples: |
+    - What can I use instead of eggs in a recipe?
+    - Is there a substitute for butter?
+    - I don't have milk, what can I use instead?
+
+- intent: ask_storage
+  examples: |
+    - How should I store fresh herbs?
+    - What's the best way to keep bread fresh?
+    - How do I store leftover soup?

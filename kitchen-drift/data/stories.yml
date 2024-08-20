@@ -1,0 +1,34 @@
+version: "3.1"
+
+stories:
+- story: greet and ask for recipe
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_recipe
+  - action: action_get_recipe
+
+- story: set a timer
+  steps:
+  - intent: set_timer
+  - action: action_set_timer
+
+- story: convert units
+  steps:
+  - intent: convert_units
+  - action: action_convert_units
+
+- story: ask for ingredient substitute
+  steps:
+  - intent: ask_substitute
+  - action: action_get_substitute
+
+- story: ask for storage tips
+  steps:
+  - intent: ask_storage
+  - action: action_get_storage_tips
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

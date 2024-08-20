@@ -1,0 +1,61 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_recipe
+  - set_timer
+  - convert_units
+  - ask_substitute
+  - ask_storage
+
+entities:
+  - ingredient
+  - unit
+  - time
+
+slots:
+  ingredient:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: ingredient
+  unit:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: unit
+  time:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: time
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you in the kitchen today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Happy cooking!"
+
+  utter_ask_recipe:
+    - text: "Sure! Which recipe are you interested in?"
+
+  utter_set_timer:
+    - text: "Timer set for {time} minutes."
+
+  utter_convert_units:
+    - text: "Let me convert that for you."
+
+  utter_ask_substitute:
+    - text: "Let me find a good substitute for {ingredient}."
+
+  utter_ask_storage:
+    - text: "I can help with storage tips. What are you storing?"
+
+actions:
+  - action_get_recipe
+  - action_set_timer
+  - action_convert_units
+  - action_get_substitute
+  - action_get_storage_tips
